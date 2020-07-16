@@ -4,4 +4,26 @@
 
 p {
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0rem;
     }
+
+    
+
+
+:host .card-body {
+    display: block;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  :host .col-md-8 {
+    display: block;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  

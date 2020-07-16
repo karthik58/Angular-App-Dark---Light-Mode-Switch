@@ -1,6 +1,6 @@
 :host .card {
     display: block;
-    padding: 12px;
+    padding: 0px;
     border-radius: 2px;
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -30,3 +30,5 @@ p {
     margin-top: 0;
     margin-bottom: 0.2rem;
 }
+
+
