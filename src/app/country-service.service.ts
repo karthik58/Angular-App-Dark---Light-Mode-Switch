@@ -18,6 +18,13 @@ export class CountryServiceService {
     )
   }
 
+  filterByRegion(region): Observable<any>{
+    return this.httpClient.get('https://restcountries.eu/rest/v2/region/' + region )
+    .pipe(
+      catchError(this.errorHandler)
+    )
+  }
+
   errorHandler(error) {
     let errorMessage = '';
     if(error.error instanceof ErrorEvent) {

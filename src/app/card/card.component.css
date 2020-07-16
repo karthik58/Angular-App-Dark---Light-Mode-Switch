@@ -5,6 +5,16 @@
     background-color: var(--primary-color);
     color: var(--text-color);
   }
+  :host .btn-secondary {
+    display: block;
+    padding: 6px;
+    border-radius: 5px;
+    border-color: #CCCCCC;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
   
   .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -31,4 +41,10 @@ p {
     margin-bottom: 0.2rem;
 }
 
-
+:host .form-control{
+    border-color: #CCCCCC;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

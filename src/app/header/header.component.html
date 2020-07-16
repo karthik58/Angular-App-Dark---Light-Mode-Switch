@@ -1,5 +1,11 @@
 <div class=" text-center" style="text-align: center;">
     <p></p>
-    <label for="darkTheme">Dark Theme</label>
-    <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
+    <!-- <label class="active" for="darkTheme" (click)="changeText()"> {{text}}</label>
+    <input id="darkTheme" type="checkbox" [formControl]="darkTheme"> -->
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input active" [formControl]="darkTheme" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1" (click)="changeText()">{{text}}</label>
+      </div>
 </div>
+
+

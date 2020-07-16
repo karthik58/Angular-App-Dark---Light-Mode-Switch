@@ -1,4 +1,27 @@
-<p style="display: inline;"><input class="text" type="text" placeholder="Search for a Country" [(ngModel)]="query"></p>
+<div class="row" style="padding: 10px;">
+    <div class="col-sm-6">
+        <p style="display: inline;"><input class="form-control" type="text" placeholder="Search for a Country"
+                aria-label="Search" [(ngModel)]="query">
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <div class="dropdown float-right">
+            <button class="btn btn-secondary effect7 dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter By Region
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">All</a>
+                <a class="dropdown-item" href="#">Africa</a>
+                <a class="dropdown-item" href="#">Americas</a>
+                <a class="dropdown-item" href="#">Asia</a>
+                <a class="dropdown-item" href="#">Europe</a>
+                <a class="dropdown-item" href="#">Oceania</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 

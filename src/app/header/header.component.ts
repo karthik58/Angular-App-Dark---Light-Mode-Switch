@@ -11,6 +11,7 @@ import { ThemeService } from '../theme.service';
 export class HeaderComponent implements OnInit {
 
   darkTheme =  new FormControl(false);
+  public text: string = 'Light Mode';
 
   constructor(private themeService: ThemeService) {
     this.darkTheme.valueChanges.subscribe(value => {
@@ -20,9 +21,16 @@ export class HeaderComponent implements OnInit {
         this.themeService.toggleLight();
       }
     });
+    
   }
 
   ngOnInit(): void {
   }
-
+  public changeText(): void {
+    if(this.text === 'Light Mode') { 
+      this.text = 'Dark Mode'
+    } else {
+      this.text = 'Light Mode'
+    }
+  }
 }
